@@ -1,11 +1,11 @@
-def call ( Map configMap){
+def call (Map configMap){
 
  pipeline {
     agent {
        node {
          label 'agent-1' 
      }
-}
+ } 
    environment { 
       packageVersion = ' '
       nexusURL = '172.31.43.110:8081'
@@ -160,5 +160,6 @@ def call ( Map configMap){
         }
    
     }
-}
+ }
+
 }
