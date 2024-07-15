@@ -1,6 +1,6 @@
 def call(Map configMap){
 
- pipeline {
+pipeline {
     agent {
        node {
          label 'agent-1' 
