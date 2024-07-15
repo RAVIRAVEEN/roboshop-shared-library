@@ -1,4 +1,4 @@
-def call (Map configMap){
+def call(Map configMap){
 
  pipeline {
     agent {
@@ -159,7 +159,7 @@ def call (Map configMap){
             echo 'I will always say Hello when pipeline is success'
         }
    
+        }   
     }
- }
 
 }
