@@ -1,6 +1,6 @@
 def call(Map configMap){
 
-    pipeline {
+    pipeline{
         agent {
            node {
             label 'agent-1' 
@@ -100,7 +100,7 @@ def call(Map configMap){
               )
             }
         }
-
+    }
 
         stage('Deploy') {
 
@@ -121,7 +121,7 @@ def call(Map configMap){
                 }
 
             }
-        }
+        
            
            
                    // stage('check parms') {
