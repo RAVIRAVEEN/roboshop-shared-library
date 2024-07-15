@@ -101,7 +101,7 @@ def call(Map configMap){
               )
             }
         }
-    }
+    
 
         stage('Deploy') {
 
@@ -123,7 +123,7 @@ def call(Map configMap){
 
             }
         
-           
+         }  
            
                    // stage('check parms') {
 
