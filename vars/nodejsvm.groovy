@@ -1,3 +1,4 @@
+
 def call(Map configMap){
 
     pipeline{
