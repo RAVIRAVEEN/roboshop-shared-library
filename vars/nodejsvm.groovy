@@ -29,7 +29,7 @@ def call(Map configMap){
         }
 
 //   build
-         stages {
+        stages {
             stage('get the version') {
                 steps {
                     script {
