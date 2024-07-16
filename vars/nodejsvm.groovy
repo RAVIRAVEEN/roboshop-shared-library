@@ -1,6 +1,4 @@
-
 def call(Map configMap){
-
     pipeline{
         agent {
            node {
@@ -33,9 +31,9 @@ def call(Map configMap){
             stage('get the version') {
                 steps {
                     script {
-                             def packageJson = readJSON file: 'package.json'
-                                packageVersion = packageJson.version
-                                echo "application version: $packageVersion"
+                            def    packageJson = readJSON file: 'package.json'
+                                    packageVersion = packageJson.version
+                                    echo "application version: $packageVersion"
                             }
                         }
                 }
