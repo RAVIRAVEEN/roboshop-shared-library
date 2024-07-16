@@ -27,7 +27,7 @@ def call(Map configMap){
         }
 
 //   build
-        stages {
+        stages{
             stage('get the version') {
                 steps {
                     script {
@@ -111,7 +111,7 @@ def call(Map configMap){
             }
             steps {
                 script {
-                            def params = [
+                         def params = [
                             string(name: 'version', value:  "$packageVersion"),
                             string(name: 'environment', value: "dev")
                            ]
